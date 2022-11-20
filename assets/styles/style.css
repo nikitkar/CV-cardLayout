@@ -1,0 +1,298 @@
+@charset "UTF-8";
+.persona {
+  background-color: var(--Color__BD);
+  padding: 50px 0;
+}
+.personaWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 60px 15px;
+  flex-wrap: wrap;
+}
+@media (max-width: 964px) {
+  .personaWrapper {
+    gap: 45px 15px;
+  }
+}
+.personaTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 65px;
+  max-width: 460px;
+  width: 100%;
+}
+@media (max-width: 964px) {
+  .personaTitle {
+    max-width: none;
+    gap: 30px;
+  }
+}
+.personaTitle--Title {
+  font-family: "Inter";
+  font-size: var(--SizeText__Title);
+  line-height: var(--LineHeight__Title);
+  font-weight: 600;
+  color: var(--Color__White);
+}
+@media (max-width: 964px) {
+  .personaTitle--Title {
+    font-size: var(--SizeText__TitleModile);
+    line-height: var(--LineHeight__TitleModile);
+  }
+}
+@media (max-width: 430px) {
+  .personaTitle--Title {
+    word-break: break-word;
+  }
+}
+.personaTitle--Biog {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 45px;
+  width: 100%;
+}
+@media (max-width: 964px) {
+  .personaTitle--Biog {
+    gap: 30px;
+  }
+}
+.personaTitle--BiogList {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+}
+.personaTitle--BiogItem {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 205px;
+  width: 100%;
+}
+@media (max-width: 964px) {
+  .personaTitle--BiogItem {
+    max-width: 125px;
+  }
+}
+.personaTitle--BiogItem__img {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 7px;
+}
+.personaTitle--BiogItem__subTitle {
+  width: 100%;
+  color: var(--Color__White);
+  opacity: 0.6;
+}
+.personaTitle--BiogItem__Title {
+  width: 100%;
+  color: var(--Color__White);
+}
+.personaTitle--Tech {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 15px;
+}
+.personaTitle--Tech__Title {
+  font-family: "Inter";
+  font-size: var(--SizeText__SubTitle);
+  line-height: var(--LineHeight__SubTitle);
+  font-weight: 600;
+  color: var(--Color__White);
+  opacity: 0.9;
+}
+@media (max-width: 964px) {
+  .personaTitle--Tech__Title {
+    font-size: var(--SizeText__SubTitleModile);
+    line-height: var(--LineHeight__SubTitleModile);
+  }
+}
+.personaTitle--TechList {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 17px;
+  width: 100%;
+}
+.personaTitle--TechItem {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1px;
+  width: 100%;
+}
+.personaTitle--TechItem__Text {
+  color: var(--Color__White);
+  opacity: 0.8;
+}
+.personaTitle--TechItem__Progress {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  width: 100%;
+  height: 7px;
+  position: relative;
+  z-index: 555;
+}
+.personaTitle--TechItem__ProgressBar {
+  background-color: var(--Color__White);
+  border-radius: 10px;
+  width: 0;
+  height: 7px;
+}
+.personaContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 45px;
+  max-width: 460px;
+  width: 100%;
+}
+@media (max-width: 964px) {
+  .personaContent {
+    max-width: none;
+    gap: 20px;
+  }
+}
+.personaContentTitle {
+  font-family: "Inter";
+  font-size: var(--SizeText__SubTitle);
+  line-height: var(--LineHeight__SubTitle);
+  font-weight: 600;
+  color: var(--Color__White);
+  opacity: 0.9;
+}
+@media (max-width: 964px) {
+  .personaContentTitle {
+    font-size: var(--SizeText__SubTitleModile);
+    line-height: var(--LineHeight__SubTitleModile);
+  }
+}
+.personaContentText {
+  font-family: "Inter";
+  font-size: var(--SizeText__MainText);
+  line-height: var(--LineHeight__MainText);
+  font-weight: 500;
+  color: var(--Color__White);
+  opacity: 0.8;
+}
+@media (max-width: 964px) {
+  .personaContentText {
+    font-size: var(--SizeText__MainTextModile);
+    line-height: var(--LineHeight__MainTextModile);
+  }
+}
+.personaContentMain {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 50px;
+  width: 100%;
+}
+@media (max-width: 964px) {
+  .personaContentMain {
+    gap: 25px;
+  }
+}
+.personaContentMainBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 15px;
+}
+.personaContentMainBlock--List {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+  list-style-type: none;
+  width: 100%;
+  margin-left: 10px;
+}
+.personaContentMainBlock--Item {
+  width: 100%;
+  position: relative;
+}
+.personaContentMainBlock--Item::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background-color: #c4c4c4;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  left: -10px;
+}
+.personaContentOther {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 15px;
+}
+.personaAvatar {
+  max-width: 460px;
+  width: 100%;
+  margin: 0 auto;
+}
+.personaAvatarImg {
+  max-width: 460px;
+  width: 100%;
+  height: 750px;
+  border-radius: 7px;
+  background: linear-gradient(360deg, #6a595b -21.87%, rgba(131, 104, 107, 0) 45.4%), url(../images/avatar/avatar.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 83px 50px;
+}
+@media (max-width: 400px) {
+  .personaAvatarImg {
+    height: 472px;
+    padding: 40px 20px;
+  }
+}
+.personaAvatarImg--Text {
+  font-family: "Inter";
+  font-size: var(--SizeText__SubTitle);
+  line-height: 35px;
+  font-weight: 600;
+  color: var(--Color__White);
+  position: relative;
+}
+.personaAvatarImg--Text::before {
+  content: "“";
+  position: absolute;
+  top: 0;
+  left: -15px;
+}
+@media (max-width: 964px) {
+  .personaAvatarImg--Text {
+    font-size: var(--SizeText__SubTitleModile);
+    line-height: var(--LineHeight__SubTitleModile);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

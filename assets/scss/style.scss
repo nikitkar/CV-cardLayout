@@ -1,9 +1,17 @@
 @import "mixin.scss";
 
+.main {
+    min-height: 100vh;
+    height: 100%;
+
+    @include displayFlex(center, center, column);
+}
+
 .persona {
     background-color: var(--Color__BD);
 
     padding: 50px 0;
+    width: 100%;
 
     &Wrapper {
         @include displayFlex(flex-start, space-between);
@@ -95,6 +103,11 @@
                     width: 100%;
 
                     color: var(--Color__White);
+
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
                 }
             }
         }

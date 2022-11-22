@@ -2,6 +2,10 @@
 .main {
   min-height: 100vh;
   height: 100%;
+  background-image: url(../images/main/mainBD.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,7 +13,6 @@
 }
 
 .persona {
-  background-color: var(--Color__BD);
   padding: 50px 0;
   width: 100%;
 }
@@ -41,7 +44,7 @@
     gap: 30px;
   }
 }
-.personaTitle--Title {
+.personaTitle-Title {
   font-family: "Inter";
   font-size: var(--SizeText__Title);
   line-height: var(--LineHeight__Title);
@@ -49,17 +52,17 @@
   color: var(--Color__White);
 }
 @media (max-width: 964px) {
-  .personaTitle--Title {
+  .personaTitle-Title {
     font-size: var(--SizeText__TitleModile);
     line-height: var(--LineHeight__TitleModile);
   }
 }
 @media (max-width: 430px) {
-  .personaTitle--Title {
+  .personaTitle-Title {
     word-break: break-word;
   }
 }
-.personaTitle--Biog {
+.personaTitle-Biog {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -68,11 +71,11 @@
   width: 100%;
 }
 @media (max-width: 964px) {
-  .personaTitle--Biog {
+  .personaTitle-Biog {
     gap: 30px;
   }
 }
-.personaTitle--BiogList {
+.personaTitle-BiogList {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -81,7 +84,7 @@
   gap: 20px;
   width: 100%;
 }
-.personaTitle--BiogItem {
+.personaTitle-BiogItem {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -90,21 +93,21 @@
   width: 100%;
 }
 @media (max-width: 964px) {
-  .personaTitle--BiogItem {
+  .personaTitle-BiogItem {
     max-width: 125px;
   }
 }
-.personaTitle--BiogItem__img {
+.personaTitle-BiogItem__img {
   width: 30px;
   height: 30px;
   margin-bottom: 7px;
 }
-.personaTitle--BiogItem__subTitle {
+.personaTitle-BiogItem__subTitle {
   width: 100%;
   color: var(--Color__White);
   opacity: 0.6;
 }
-.personaTitle--BiogItem__Title {
+.personaTitle-BiogItem__Title {
   width: 100%;
   color: var(--Color__White);
   display: -webkit-box;
@@ -112,7 +115,7 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-.personaTitle--Tech {
+.personaTitle-Tech {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -120,7 +123,7 @@
   justify-content: flex-start;
   gap: 15px;
 }
-.personaTitle--Tech__Title {
+.personaTitle-Tech__Title {
   font-family: "Inter";
   font-size: var(--SizeText__SubTitle);
   line-height: var(--LineHeight__SubTitle);
@@ -129,12 +132,12 @@
   opacity: 0.9;
 }
 @media (max-width: 964px) {
-  .personaTitle--Tech__Title {
+  .personaTitle-Tech__Title {
     font-size: var(--SizeText__SubTitleModile);
     line-height: var(--LineHeight__SubTitleModile);
   }
 }
-.personaTitle--TechList {
+.personaTitle-TechList {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -142,7 +145,7 @@
   gap: 17px;
   width: 100%;
 }
-.personaTitle--TechItem {
+.personaTitle-TechItem {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -150,11 +153,11 @@
   gap: 1px;
   width: 100%;
 }
-.personaTitle--TechItem__Text {
+.personaTitle-TechItem__Text {
   color: var(--Color__White);
   opacity: 0.8;
 }
-.personaTitle--TechItem__Progress {
+.personaTitle-TechItem__Progress {
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 10px;
   width: 100%;
@@ -162,7 +165,7 @@
   position: relative;
   z-index: 555;
 }
-.personaTitle--TechItem__ProgressBar {
+.personaTitle-TechItem__ProgressBar {
   background-color: var(--Color__White);
   border-radius: 10px;
   width: 0;
@@ -231,7 +234,7 @@
   justify-content: flex-start;
   gap: 15px;
 }
-.personaContentMainBlock--List {
+.personaContentMainBlock-List {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -241,11 +244,11 @@
   width: 100%;
   margin-left: 10px;
 }
-.personaContentMainBlock--Item {
+.personaContentMainBlock-Item {
   width: 100%;
   position: relative;
 }
-.personaContentMainBlock--Item::before {
+.personaContentMainBlock-Item::before {
   content: "";
   width: 5px;
   height: 5px;
@@ -288,7 +291,7 @@
     padding: 40px 20px;
   }
 }
-.personaAvatarImg--Text {
+.personaAvatarImg-Text {
   font-family: "Inter";
   font-size: var(--SizeText__SubTitle);
   line-height: 35px;
@@ -296,14 +299,14 @@
   color: var(--Color__White);
   position: relative;
 }
-.personaAvatarImg--Text::before {
+.personaAvatarImg-Text::before {
   content: "“";
   position: absolute;
   top: 0;
   left: -15px;
 }
 @media (max-width: 964px) {
-  .personaAvatarImg--Text {
+  .personaAvatarImg-Text {
     font-size: var(--SizeText__SubTitleModile);
     line-height: var(--LineHeight__SubTitleModile);
   }

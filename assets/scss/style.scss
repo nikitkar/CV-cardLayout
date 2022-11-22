@@ -4,12 +4,15 @@
     min-height: 100vh;
     height: 100%;
 
+    background-image: url(../images/main/mainBD.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
     @include displayFlex(center, center, column);
 }
 
 .persona {
-    background-color: var(--Color__BD);
-
     padding: 50px 0;
     width: 100%;
 
@@ -37,7 +40,7 @@
             gap: 30px;
         }
 
-        &--Title {
+        &-Title {
             @include font(
                 var(--SizeText__Title),
                 600,
@@ -57,7 +60,7 @@
             }
         }
 
-        &--Biog {
+        &-Biog {
             @include displayFlex(flex-start, flex-start, column);
             gap: 45px;
 
@@ -112,7 +115,7 @@
             }
         }
 
-        &--Tech {
+        &-Tech {
             width: 100%;
 
             @include displayFlex(flex-start, flex-start, column);
@@ -237,7 +240,7 @@
                 @include displayFlex(flex-start, flex-start, column);
                 gap: 15px;
 
-                &--List {
+                &-List {
                     @include displayFlex(flex-start, flex-start, column);
                     gap: 10px;
 
@@ -248,7 +251,7 @@
                     margin-left: 10px;
                 }
 
-                &--Item {
+                &-Item {
                     width: 100%;
 
                     position: relative;
@@ -310,7 +313,7 @@
                 padding: 40px 20px;
             }
 
-            &--Text {
+            &-Text {
                 @include font(var(--SizeText__SubTitle), 600, "Inter", 35px);
 
                 color: var(--Color__White);
